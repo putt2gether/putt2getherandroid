@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_Crop"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/back" />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_score_new_eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="CROP IMAGE"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+    </RelativeLayout>
+
+    <view
+        android:id="@+id/image"
+        android:layout_above="@+id/aaaaaaa"
+        android:layout_below="@+id/toolbar_Crop"
+        class="com.putt2gether.crop_image.CropImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:background="@color/action" />
+
+    <LinearLayout
+        android:id="@+id/aaaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:background="@drawable/rounded_btn"
+
+        android:paddingRight="10dip">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/discard"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+           android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/puttText"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/rotateLeft"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/rotate_left" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/puttText"/>
+
+        <ImageView
+            android:id="@+id/rotateRight"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/rotate_right" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/puttText"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="SAVE"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

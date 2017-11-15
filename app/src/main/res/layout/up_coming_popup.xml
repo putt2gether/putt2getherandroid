@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_upcoming">
+
+
+    <RelativeLayout
+        android:id="@+id/star_golf_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/upcomingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPCOMING EVENT"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/close_dialog_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/upcomingclose"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1dfdf"/>
+
+    <RelativeLayout
+        android:id="@+id/star_golf_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/upcoming_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/star_golf"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@+id/star_golf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/allstar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1dfdf"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE: "
+            android:textColor="@color/action"
+            android:textSize="14dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/upcoming_logo_date"/>
+        <ImageView
+            android:id="@+id/upcoming_logo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/time_invite"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/upcoming_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/action"
+            android:textSize="14dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/date_txt"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1dfdf"/>
+
+    <RelativeLayout
+        android:id="@+id/upcomin_event_venue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/date_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VENUE:"
+            android:textColor="@color/action"
+            android:textSize="14dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/upcoming_logo_venue"/>
+        <ImageView
+            android:id="@+id/upcoming_logo_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/venue_up"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <com.putt2gether.view.LatoTextView
+
+            android:id="@+id/upcoming_golfcourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/action"
+            android:textSize="14dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/date_venue"/>
+
+    </RelativeLayout>
+</LinearLayout>

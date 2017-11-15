@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_define_team"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_define_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7sp"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEFINE TEAM"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_define_team"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_define_team"
+        android:id="@+id/team_a_define"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/selected_gray">
+
+        <EditText
+            android:id="@+id/team_A_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:hint="TEAM A"
+            android:textColorHint="#000"
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:maxLength="15"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15sp"
+            android:ems="10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/teamA_player1_layout"
+        android:layout_below="@+id/team_a_define"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp">
+
+        <RelativeLayout
+            android:id="@+id/teamA_player1_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.CircleImageView
+
+                android:layout_weight="1"
+                android:id="@+id/teamA_player1_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/vishal" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/teamA_playe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teamA_player1_lay"
+            android:text="ADD PLAYER"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/age_lay1"
+            android:layout_toRightOf="@+id/teamA_playe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp">
+
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/teamA_player1_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5sp"/>
+
+        </LinearLayout>
+
+
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN"
+            android:textColor="#000"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/teamA_player2_layout"
+        android:layout_below="@+id/teamA_player1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp">
+
+        <RelativeLayout
+            android:id="@+id/teamA_player2_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.CircleImageView
+                android:layout_weight="1"
+                android:id="@+id/teamA_player2_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/vishal" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/teamA_playe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teamA_player2_lay"
+            android:text="ADD PLAYER"
+            app:font="Roboto-Regular_0.ttf"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/age_lay2"
+            android:layout_toRightOf="@+id/teamA_playe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/teamA_player2_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_remove_btn_teamA_playe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:text="ADD"
+            android:padding="7dp"
+            android:textColor="#262525"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/teamA_player2_layout"
+        android:id="@+id/team_b_define"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/selected_gray">
+
+        <EditText
+            android:id="@+id/team_b_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:hint="TEAM B"
+            android:textColorHint="#000"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15sp"
+            android:ems="10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/teamB_player1_layout"
+        android:layout_below="@+id/team_b_define"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp">
+
+        <RelativeLayout
+            android:id="@+id/teamB_player1_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.CircleImageView
+                android:layout_weight="1"
+                android:id="@+id/teamB_player1_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/vishal" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/teamB_playe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teamB_player1_lay"
+            android:text="ADD PLAYER"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/age_lay3"
+            android:layout_toRightOf="@+id/teamB_playe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true">
+
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/teamB_player1_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:textSize="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5sp"/>
+
+        </LinearLayout>
+
+
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_remove_btn_teamB_playe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:text="ADD"
+            android:padding="7dp"
+            android:textColor="#262525"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/teamB_player2_layout"
+        android:layout_below="@+id/teamB_player1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp">
+
+        <RelativeLayout
+            android:id="@+id/teamB_player2_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.CircleImageView
+                android:layout_weight="1"
+                android:id="@+id/teamB_player2_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/vishal" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/teamB_playe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teamB_player2_lay"
+            android:text="ADD PLAYER"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/age_lay4"
+            android:layout_toRightOf="@+id/teamB_playe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:layout_centerVertical="true">
+
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/teamB_player2_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12dp"
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5sp"/>
+
+        </LinearLayout>
+
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_remove_btn_teamB_playe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:text="ADD"
+            android:padding="7dp"
+            android:textColor="#262525"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/countinue_define_team_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTINUE"
+            app:font="Roboto-Bold_0.ttf"
+            android:paddingTop="4dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7sp"
+            android:paddingRight="7sp"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

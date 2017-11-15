@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e6e2e2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <com.putt2gether.view.CircleImageView
+            android:id="@+id/request_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/vishal"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/request_name"
+            android:layout_toRightOf="@+id/request_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginRight="3dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            android:layout_centerVertical="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_marginLeft="5dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/request_name">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/request_handicap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textAllCaps="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_marginLeft="1dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_below="@+id/participant_image"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1dfdf" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/accept_request"
+            android:background="@color/action"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/request_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCEPT"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/back_participantnew"
+                android:layout_marginLeft="5dp"
+                app:font="Roboto-Bold_0.ttf"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/decline_request"
+            android:background="@color/tabLayout"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DECLINE"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/back_participantnew"
+                android:layout_marginLeft="5dp"
+                app:font="Roboto-Bold_0.ttf"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_color"/>
+
+</LinearLayout>

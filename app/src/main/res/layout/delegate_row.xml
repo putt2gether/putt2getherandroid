@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/name_hole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIKAS RAWAT "
+            android:textSize="12dp"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginRight="3dp"
+            android:textColor="#000"
+            app:font="Roboto-Regular_0.ttf"
+            />
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_toRightOf="@id/name_hole"
+            android:id="@+id/hole_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(12)"
+            android:layout_centerVertical="true"
+            android:textSize="12dp"
+            android:textColor="@color/accept"
+            app:font="Roboto-Regular_0.ttf"
+            />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/delegate_to"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/split_delegate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="DELEGATE TO"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_btn"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:textColor="@color/white_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/delegate_to_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="1dp"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/delegate_to"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:textColor="@color/transparent"
+            app:font="Roboto-Regular_0.ttf" />
+
+        <ImageView
+            android:id="@+id/split_delegate"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/down_arrow"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selected_gray"
+        />
+</LinearLayout>

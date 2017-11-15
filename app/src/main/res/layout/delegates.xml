@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_delegate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_score_eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELEGATE SCORING TO"
+            android:textColor="#fff"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_delegate"
+            android:layout_marginLeft="5dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_create_event"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/continue_delegate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/delegate_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/continue_delegate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/action"
+        android:layout_alignParentBottom="true">
+
+        <com.putt2gether.view.LatoTextView
+
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTINUE"
+            app:font="Roboto-Bold_0.ttf"
+            android:paddingTop="4dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

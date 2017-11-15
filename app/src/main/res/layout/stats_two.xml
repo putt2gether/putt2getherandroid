@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/selected_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIR"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selected_gray" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:id="@+id/maincircle"
+                android:layout_width="272dp"
+                android:layout_height="272dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/stats_circle">
+
+                <RelativeLayout
+                    android:id="@+id/innercir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/innerc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/statsinner" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/innerc2"
+                        android:layout_toRightOf="@+id/innerc2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/gir_hit_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#000"
+                            android:textSize="18dp"
+                            app:font="Roboto-Bold_0.ttf" />
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HIT"
+                            android:textColor="@color/puttText"
+                            android:textSize="12dp"
+                            app:font="Roboto-Regular_0.ttf" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/gir_missed_stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    app:font="Roboto-Bold_0.ttf"/>
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MISSED"
+                    android:textColor="@color/puttText"
+                    android:textSize="12dp"
+                    app:font="Roboto-Regular_0.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

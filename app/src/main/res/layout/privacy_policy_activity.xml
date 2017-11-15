@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/back" />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/policy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/back_privacy_policy"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="PRIVACY POLICY"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/policy_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+
+            android:textSize="13dp"
+            app:font="Roboto-Regular_0.ttf" />
+
+        <WebView
+            android:id="@+id/webView_privacy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

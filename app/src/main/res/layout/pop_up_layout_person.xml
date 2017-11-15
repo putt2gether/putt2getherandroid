@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/action">
+
+
+    <LinearLayout
+
+        android:id="@+id/first_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        
+
+
+        <LinearLayout
+            android:id="@+id/viewRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/request_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/viewrequests"
+                android:layout_gravity="center" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:textColor="#fff"
+                android:text="VIEW"
+                android:textSize="12dp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:textColor="#fff"
+                android:text="REQUEST"
+                android:textAllCaps="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectScorer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/selectScorer_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/selectscorer"
+                android:layout_gravity="center" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:textColor="#fff"
+                android:text="SELECT"
+                android:textSize="12dp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:textColor="#fff"
+                android:text="SCORER"
+                android:textAllCaps="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/second_lay"
+        android:layout_below="@+id/first_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/editEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/editEvent_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/editevent"
+                android:layout_gravity="center" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:textColor="#fff"
+                android:text="EDIT"
+                android:textSize="12dp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:textColor="#fff"
+                android:text="EVENT"
+                android:textAllCaps="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/viewParicipint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/participant_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/viewparticipants"
+                android:layout_gravity="center" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:textColor="#fff"
+                android:text="VIEW"
+                android:textSize="12dp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:textColor="#fff"
+                android:text="PARTICIPANTS"
+                android:textAllCaps="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/close_btn"
+        android:layout_below="@+id/second_lay"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Are you sure you want to decline this request?"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        app:font="Roboto-Regular_0.ttf"
+        android:textColor="@color/black_color"/>
+
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/yes_decline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Yes"
+        android:gravity="center"
+        android:textSize="17sp"
+        app:font="Roboto-Regular_0.ttf"
+        android:textColor="@color/white_color"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="2dp"/>
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/no_decline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="No"
+        android:gravity="center"
+        android:textSize="17sp"
+        app:font="Roboto-Regular_0.ttf"
+        android:textColor="@color/white_color"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="2dp"/>
+
+
+
+
+</LinearLayout>

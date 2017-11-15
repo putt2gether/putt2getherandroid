@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_eventList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/request_to_parti_btn"
+
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/event_invitaion_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/banner_invite_list">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <ImageView
+            android:id="@+id/banner_invite_list"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/request_to_parti_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/req_to_parti_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:text="REQUEST TO PARTICIPATE"
+            android:textColor="@color/white_color"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

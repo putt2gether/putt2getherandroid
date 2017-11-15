@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:paddingBottom="5dp"
+    android:id="@+id/parentTee">
+
+
+    <RelativeLayout
+        android:id="@+id/circle_layout_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="7dp"
+        android:background="@mipmap/winner_circle1"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/rank_tv_history_popup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="T100"
+                android:gravity="center"
+                app:font="Roboto-Bold_0.ttf"
+                android:textColor="@color/puttText"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/rank_image_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/popup_history"
+        android:layout_below="@+id/circle_layout_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginRight="12dp"
+        app:font="Roboto-Bold_0.ttf"
+        android:textColor="@color/puttText"/>
+
+
+</RelativeLayout>

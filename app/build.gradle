@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.putt2gether"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 6
+        versionName "1.5"
+        multiDexEnabled true
+        lintOptions { disable "ResourceType"
+
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.5.0'
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    compile 'com.prolificinteractive:material-calendarview:1.4.0'
+
+    compile 'com.github.chenupt.android:springindicator:1.0.2@aar'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    compile 'com.github.florent37:singledateandtimepicker:1.2.0'
+    compile 'com.google.android.gms:play-services:9.2.0'
+    compile 'com.google.firebase:firebase-messaging:9.2.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

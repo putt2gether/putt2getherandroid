@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Putt2Gether</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="hint_email">EMAIL</string>
+    <string name="hint_password">PASSWORD</string>
+
+    <string name="display_name">DISPLAY NAME</string>
+    <string name="handicap">HANDICAP</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+
+    <string name="empty_name">Please enter display name</string>
+
+    <string name="created_by">Please Enter Event Name</string>
+    <string name="empty_handicap">Please enter handicap between 0-30</string>
+    <string name="empty_country">Please select country</string>
+    <string name="empty_mobile">Please enter valid mobile number</string>
+    <string name="empty_code">Country code can not be empty</string>
+    <string name="invalid_email">Please enter valid email address</string>
+    <string name="err_msg_email">Wrong Email</string>
+    <string name="err_msg_password">Incorrect Password</string>
+    <string name="password_empty">The password should be minimum of 6 characters</string>
+
+    <string name="please_enter">PLEASE ENTER YOUR EMAIL ADDRESS.YOU WILL RECEIVE A NEW PASSWORD SENT TO REGISTERED EMAIL.</string>
+
+    <string name="otp_text">ONE TIME PASSWORD(OTP) HAS BEEN SENT TO YOUR ENTERED EMAIL ID,PLEASE ENTER IT HERE TO VERIFY YOUR EMAIL</string>
+    <string name="app_id">224164561363409</string>
+    <string name="resetpass_text">PLEASE ENTER A NEW PASSWORD</string>
+    <string name="internet_warning">No Internet Access</string>
+    <string name="drawer_open">Menu Open</string>
+    <string name="drawer_close">Menu Close</string>
+    <string name="home">HOME</string>
+    <string name="invite">INVITE</string>
+    <string name="myscores">MY SCORES</string>
+    <string name="my_stats">MY STATS</string>
+    <string name="my_groups">MY GROUPS</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="faqs">FAQS</string>
+    <string name="feedback">FEEDBACK</string>
+    <string name="logout">LOGOUT</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>HOME</item>
+        <item>INVITE</item>
+        <item>MY SCORES</item>
+        <item>MY STATS</item>
+        <item>MY GROUPS</item>
+        <item>NOTIFICATIONS</item>
+        <item>FAQs</item>
+        <item>FEEDBACK</item>
+        <item>LOGOUT</item>
+        <item>PROFILE</item>
+    </string-array>
+
+
+    <array name="nav_drawer_icons">
+        <item>@mipmap/home</item>
+        <item>@mipmap/invite</item>
+        <item>@mipmap/history</item>
+        <item>@mipmap/stats</item>
+        <item>@mipmap/manage_groups</item>
+        <item>@mipmap/notification</item>
+        <item>@mipmap/faq</item>
+        <item>@mipmap/feedback</item>
+        <item>@mipmap/logout</item>
+
+        <item>@mipmap/notification_read</item>
+
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="privacy_policy"><u>Privacy Policy</u>.</string>
+    <string name="grossText">In Gross Strokeplay, total number of strokes taken on each hole without adjusting your handicap is counted. The leaderboard shows the deviation of your score against the par score of the course.</string>
+    <string name="net_stokeplay">In Net Strokeplay, total number of strokes taken on each hole adjusting your full handicap is counted. The leaderboard shows the deviation of your net score against the par score of the course.</string>
+
+    <string name="handicap_strokeplay">In 3/4th Handicap Strokeplay, total number of strokes taken on each hole adjusting your 3/4th handicap is counted. The leaderboard shows the deviation of your net score against the par score of the course.</string>
+
+    <string name="gross_stableford">In Gross Stableford, points are awarded to you without adjusting your handicap in relation to your par.\n The scoring is as follows\n
+        o Albatross -> +5 , Eagle -> +4 , Birdie -> +3 , Par -> +2 , Bogey -> +1 , Double Bogey onwards -> 0</string>
+    
+    <string name="net_stable_ford">In Net Stableford, points are awarded to you by adjusting your full handicap in relation to your par.\n The scoring is as follows\n
+        o Net Albatross -> +5 , Net Eagle -> +4 , Net Birdie -> +3 ,Net Par -> +2 , Net Bogey ->+1 ,Net Double Bogey onwards -> 0</string>
+    
+    <string name="net34_stable">In 3/4 th Net Stableford, points are awarded to you by adjusting your 3/4 th handicap in relation to your par.\n The scoring is as follows\n
+        o Net Albatross -> +5 , Net Eagle -> +4 , Net Birdie -> +3 ,Net Par -> +2 , Net Bogey -> +1 ,Net Double Bogey onwards -> 0</string>
+
+    <string name="match_play">In match play, two players (or two teams) play every hole as a separate contest against each
+other. The party with the lower score wins that hole. If the scores of both players or teams are
+equal the hole is “halved” (drawn). The game is won by that party that wins more holes than the
+other.</string>
+    
+    <string name="two_one">2 – 1 is a variation of the standard Match Play (teams). This formats takes into consideration
+scores of both players in the team. Each hole is worth 3 points, 2 points are won by the winner
+of the better ball and 1 point is won by the winner of the second ball.</string>
+    
+    <string name="vegas">Vegas scoring is a gamblers delight. A variation of the match play (teams) this format takes into
+consideration the scores of both the players. The gross scores of the partners are paired to form
+a 2 digit score (i.e 44 if both players scored a par on a Par 4). Net of the team scores over 18
+holes decides the winner.</string>
+    
+    <string name="auto_press">Auto Press or Press Repress or Nassau Scoring is a variation of Match play scoring. The
+scoring is done for each of the 9 holes called Halves and for the total 18 holes called the Match.</string>
+    
+    <string name="frou_two_zero">This format is staple scoring to a 3 ball game. Each hole carries a values of 6 points. These 6 points are
+distributed based on results for each hole (4 – 2 – 0, 3 – 3 – 0, 3 – 0 – 0, 0 – 0 – 0) The scores for all 18
+holes are totaled to arrive at the final score.</string>
+
+    <string-array name="custom_weekdays">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Track your Score and Stats</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Scoring across multiple formats</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Introducing badges - Grab yours</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">Introducing leaderboards for skill prizes</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="slide_5_title">Participate in events happening around you</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+</resources>

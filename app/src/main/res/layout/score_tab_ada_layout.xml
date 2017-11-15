@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/frstrowscore"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="10"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/frstrowscore"
+            android:gravity="center_horizontal">
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/secondrowscore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/circle_plus"
+                android:gravity="center"
+                android:text="W"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/thirdrowscore1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/thirdrowscore2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/thirdrowscore3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/thirdrowscore4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/thirdrowscore5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/thirdrowscore6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/fourthrowscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="8"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

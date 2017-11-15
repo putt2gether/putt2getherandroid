@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/golf_course_name_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golf Course Name"
+        android:textColor="#000"
+        app:font="Roboto-Regular_0.ttf"
+        android:textSize="17dp"
+        android:padding="2dp"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/golf_course_address_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golf Course Address"
+            android:textColor="#918f8f"
+            android:padding="2dp"
+            android:textSize="12dp"
+            app:font="Roboto-Regular_0.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e2e1e1"
+            android:layout_marginBottom="2dp"/>
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/bluedot_golfCours"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:background="@drawable/blue_dot">
+
+    </RelativeLayout>
+
+</RelativeLayout>

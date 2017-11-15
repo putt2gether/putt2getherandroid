@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_create_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE EVENT"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_create_event"
+            android:layout_marginLeft="5dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/scroll_view_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/invite_from_create"
+        android:layout_below="@+id/toolbar_create_event">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selecte_golf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOLF COURSE"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/select_golf_course"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="160dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/golf_select_lay">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/select_golf_course_tv"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:hint="SELECT GOLF CLUB"
+                        android:textColorHint="#fff"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="7dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:layout_marginRight="2dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/create_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT NAME "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp">
+
+                    <EditText
+                        android:id="@+id/event_userName"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColorHint="@color/action"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:focusableInTouchMode ="true"
+                        android:inputType="textCapCharacters"
+                        android:textAllCaps="true"
+                        android:singleLine="true"
+                        android:paddingLeft="2dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/action"
+                        android:background="#00000000"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO. OF PLAYERS "
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+
+                        android:gravity="start"
+                        android:id="@+id/radioGroup_players">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_player1"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:button="@android:color/transparent"
+                            android:text="1"
+                            android:textSize="12dp"
+                            android:textColor="#fff"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:id="@+id/radioButton_player2"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:button="@android:color/transparent"
+                            android:text="2"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"/>
+
+                        <RadioButton
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:id="@+id/radioButton_player3"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:button="@android:color/transparent"
+                            android:text="3"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"/>
+                        <RadioButton
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:textSize="12dp"
+                            android:id="@+id/radioButton_player4"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:button="@android:color/transparent"
+                            android:text="4"
+                            android:layout_marginRight="2dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"/>
+                        <RadioButton
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:id="@+id/radioButton_player_more"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:textSize="12dp"
+                            android:button="@android:color/transparent"
+                            android:text="4+"
+                            android:gravity="center"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/create_individual_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/team"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEAM"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:id="@+id/radioGroup_team">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_yes_team"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:text="YES"
+                            android:textColor="#fff"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButton_no_team"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="NO"
+                            android:checked="false"
+                            android:textColor="#000"
+                            android:button="@android:color/transparent"
+                            android:layout_marginLeft="3dp"/>
+
+
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/create_select_formate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/formate"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT FORMAT"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+
+                    android:layout_marginLeft="3dp"
+
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/format_icon"
+                    android:background="@drawable/golf_select_lay">
+
+
+                    <Spinner
+                        android:id="@+id/strokeplay_spinner"
+                        android:layout_width="match_parent"
+                        android:dropDownVerticalOffset="2dp"
+                        android:dropDownWidth="180dp"
+                        android:layout_centerVertical="true"
+                        android:overlapAnchor="false"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/format_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@mipmap/i_blue"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT TEE "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/tee_m"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/circle_layout"
+                        android:layout_marginRight="5dp">
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/m_txt"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="M"
+                            android:textSize="12dp"
+                            android:layout_centerInParent="true"
+                            android:textColor="#fff"
+                            app:font="Roboto-Regular_0.ttf" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/tee_w"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/circle_layout"
+                        >
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/w_txt"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="W"
+                            android:textSize="12dp"
+                            android:textColor="#fff"
+                            android:layout_centerInParent="true"
+                            app:font="Roboto-Regular_0.ttf" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/tee_j"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_layout">
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/j_txt"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="J"
+                            android:textSize="12dp"
+                            android:textColor="#fff"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/create_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT TIME "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/date_time_picker"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/date_time_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Date &amp; Time"
+                        android:textColor="@color/puttText"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="14dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:singleLine="true"
+                        android:background="#00000000"
+                        android:focusableInTouchMode="false"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/hole_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO. OF HOLES "
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+
+                        android:gravity="start"
+                        android:id="@+id/radioGroup_noOf_holes">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_hole9"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:button="@android:color/transparent"
+                            android:text="9"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false" />
+
+                        <RadioButton
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:id="@+id/radioButton_hole18"
+                            android:textSize="14dp"
+                            android:background="@drawable/radio_background"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:button="@android:color/transparent"
+                            android:text="18"
+                            android:textColor="#fff"
+                            android:checked="true"
+                            android:layout_marginLeft="15dp"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/select_hole_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT HOLES"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:id="@+id/radioGroup_hole_type">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_front9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:text="FRONT 9"
+                            android:textColor="#fff"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButton_back9"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:padding="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="BACK 9"
+                            android:textSize="12dp"
+                            android:button="@android:color/transparent"
+                            android:layout_marginLeft="3dp"/>
+
+
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/event_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT TYPE"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:id="@+id/radioGroup_event_type">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_public"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:text="PUBLIC"
+                            android:textColor="#fff"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:checked="true" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButton_private"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:checked="false"
+                            android:padding="3dp"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:text="PRIVATE"
+                            android:button="@android:color/transparent"
+                            android:layout_marginLeft="3dp"/>
+
+
+                    </RadioGroup>
+                    <ImageView
+                        android:id="@+id/info_icon_event"
+                        android:layout_width="20dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/i_blue"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/spot_prize_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOT PRIZE"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:id="@+id/radioGroup_spot_prize">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_yes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:text="YES"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:textSize="12dp"
+
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:checked="false" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButton_no"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="NO"
+                            android:textColor="#fff"
+                            android:button="@android:color/transparent"
+                            android:layout_marginLeft="3dp"/>
+
+
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/i_blue"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/multi_screen_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SINGLE SCREEN"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:orientation="horizontal"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:id="@+id/radioGroup_multi_screen">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_Multiyes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:text="YES"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:textSize="12dp"
+
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:checked="false" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButton_Multino"
+                            android:background="@drawable/event_type_radiobackg"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12dp"
+                            android:padding="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="NO"
+                            android:checked="true"
+                            android:textColor="#fff"
+                            android:button="@android:color/transparent"
+                            android:layout_marginLeft="3dp"/>
+
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/i_blue"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/spot_prize_yes_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginBottom="7dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/select_hole"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="SELECT HOLE"
+                        android:gravity="center"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textSize="15dp"
+                        android:textColor="@color/black_color"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#949494"
+                        android:layout_below="@+id/select_hole"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/closest_pinTXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLOSEST TO PIN"
+                        android:textSize="15dp"
+                        android:ellipsize="end"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="@color/black_color"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp" />
+                    <LinearLayout
+                        android:id="@+id/closest_pin_btn"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true">
+
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#949494"
+                        android:layout_below="@+id/closest_pin_btn"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/long_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LONG DRIVE"
+                        android:textSize="15dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="@color/black_color"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp" />
+
+                    <LinearLayout
+                        android:id="@+id/long_drive_btn"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true">
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#949494"
+                        android:layout_below="@+id/long_drive_btn"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/straight_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STRAIGHT DRIVE"
+                        android:textSize="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="@color/black_color"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp" />
+
+                    <LinearLayout
+                        android:id="@+id/straight_drive_btn"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="7dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+
+        android:id="@+id/invite_from_create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/invite_Text"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INVITE PLAYERS"
+            app:font="Roboto-Bold_0.ttf"
+            android:paddingTop="4dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+</RelativeLayout>

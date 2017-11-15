@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        android:id="@+id/suggestion_row_layout"
+        android:layout_below="@+id/teamB_player1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/teamB_player2_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.CircleImageView
+
+                android:id="@+id/suggestions_row_image"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/vishal" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/suggestion_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teamB_player2_lay"
+            android:text="ADD PLAYER"
+            app:font="Roboto-Regular_0.ttf"
+            android:textSize="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/age_lay2"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/suggestion_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true">
+
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/suggestion_row_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13dp"
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5sp"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/suggestion_row_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/suggestion_row_addBTN"
+            android:layout_marginRight="10sp"
+            android:background="@mipmap/star"
+            android:visibility="gone"/>
+
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/suggestion_row_addBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:text="ADD"
+            android:padding="7dp"
+            android:textColor="#262525"
+            android:layout_centerVertical="true"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e5e5"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

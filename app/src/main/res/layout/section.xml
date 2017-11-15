@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<com.putt2gether.view.LatoTextView
+
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="INVITE"
+    android:textAllCaps="true"
+    android:id="@+id/section_text"
+    app:font="Roboto-Regular_0.ttf"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_marginRight="15sp"
+    android:layout_marginLeft="15sp"
+    android:textColor="@color/puttText" />
+
+<View
+    android:layout_below="@+id/section_text"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginRight="15sp"
+    android:layout_marginLeft="15sp"
+    android:background="@color/puttText"/>
+</RelativeLayout>

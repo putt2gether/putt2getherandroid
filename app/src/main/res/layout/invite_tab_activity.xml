@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_tab_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_tab_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7sp"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/tab_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_tab_invite"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/invite_TabLayout"
+        android:layout_below="@+id/toolbar_tab_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/tabLayout"
+        app:tabIndicatorColor="@color/white_color"
+        app:tabIndicatorHeight="@dimen/spacing_tiny_small"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white_color" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_invite"
+        android:layout_below="@+id/invite_TabLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@+id/invite_from_create"/>
+
+
+</RelativeLayout>

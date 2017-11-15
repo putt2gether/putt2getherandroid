@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e2e1e1"
+        android:paddingBottom="5dp">
+
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/aaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECOVERY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:textColor="#000"
+            app:font="Roboto-Regular_0.ttf"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/hit_miss_layout"
+            android:layout_below="@+id/aaaa"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/scramble_recovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black_color"
+                    android:textSize="23dp"
+                    app:font="Roboto-Bold_0.ttf"
+                    android:layout_gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_layout"
+                    android:layout_marginTop="15dp">
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SCRAMBLE"
+                        android:textSize="14dp"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:paddingTop="3dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="11dp">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/sand_recovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black_color"
+                    android:textSize="23dp"
+                    app:font="Roboto-Bold_0.ttf"
+                    android:layout_gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_layout"
+                    android:layout_marginTop="15dp">
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAND SAVE"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_centerInParent="true"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

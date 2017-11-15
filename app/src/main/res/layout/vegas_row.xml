@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/border_rectangle">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/vegas_hole_no"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_rectangle"
+        android:layout_weight="1.5">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/vegas_player_1"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_rectangle"
+        android:layout_weight="1.5">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/vegas_player_2"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_rectangle"
+        android:layout_weight="1.5">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/vegas_player_3"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_rectangle"
+        android:layout_weight="1.5">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/vegas_player4"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_rectangle"
+        android:layout_weight="1.1">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/vegas_score_total"
+
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black_color"
+            app:font="Roboto-Regular_0.ttf" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

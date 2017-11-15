@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/format_txt"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:singleLine="true"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:paddingRight="7dp"
+        app:font="Roboto-Regular_0.ttf"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/white_color"
+        android:background="@color/action"
+        android:textAlignment="inherit" />
+
+    <ImageView
+        android:id="@+id/formaticon"
+        android:layout_toRightOf="@+id/format_txt"
+        android:layout_marginLeft="5dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+</RelativeLayout>

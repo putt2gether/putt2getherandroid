@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/action"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/puttText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/finishdialogfrag"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="HOLE"
+                app:font="Roboto-Bold_0.ttf"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                app:font="Roboto-Bold_0.ttf"
+                android:text="HOLE SCORE"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="AGG. SCORE"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/finishdialogfrag"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/close"
+            android:padding="5dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_21_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

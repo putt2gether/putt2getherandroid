@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentTee"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/action"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/heading_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/popup_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+
+            android:gravity="center"
+            android:text="SELECT TIME"
+            android:textColor="@color/white_color"
+            android:textSize="15dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/popup_preview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="SELECT TIME"
+            android:textColor="@color/white_color"
+            android:textSize="12dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+
+        <RelativeLayout
+            android:id="@+id/timeDone_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_btn">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/donetetx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="DONE"
+                android:textColor="@color/white_color"
+                android:textSize="15dp"
+                app:font="Roboto-Bold_0.ttf" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+        android:id="@+id/single_date_time"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/heading_time"
+        android:layout_marginTop="10dp"
+        android:layout_height="230dp"
+        app:picker_textSize="20dp"
+
+        android:gravity="center"
+        app:picker_selectedTextColor="#fff"
+        app:picker_textColor="#fff"
+        app:picker_curved="true"
+        app:picker_cyclic="false"
+        app:picker_visibleItemCount="7" />
+
+
+</RelativeLayout>

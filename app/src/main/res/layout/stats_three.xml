@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selected_gray"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAIRWAYS"
+            android:textColor="#000"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selected_gray"/>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/statsbut"
+            android:text="HIT"
+            />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/hit_fairway_stats"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="302dp"
+            android:layout_height="171dp"
+            android:background="@mipmap/fairwaystats" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/statsbut"
+                android:text="LEFT" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/left_fairway_stats"
+               android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                app:font="Roboto-Bold_0.ttf"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/statsbut"
+                android:text="RIGHT"
+                />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/right_fairway_stats"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                app:font="Roboto-Bold_0.ttf"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

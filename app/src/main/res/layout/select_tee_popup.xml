@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/popBackground"
+    android:paddingBottom="5dp"
+    android:id="@+id/parentTee"
+    android:visibility="gone">
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/tee_doneTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DONE"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="17sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        app:font="Roboto-Bold_0.ttf"
+        android:textColor="@color/white_color"/>
+
+    <View
+        android:id="@+id/t_l"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeeee"
+        android:layout_below="@id/tee_doneTXT"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/color_list"
+        android:layout_below="@+id/t_l"
+        android:layout_marginTop="7dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="M"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="22dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textColor="@color/white_color"/>
+
+        <LinearLayout
+            android:id="@+id/m_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/m1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:padding="15dp"
+
+                app:font="Roboto-Bold_0.ttf"
+                android:text="mr"
+                android:textSize="2dp"
+                android:textColor="@color/transparent"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/m2"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:text="mg"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"/>
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/m3"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_gravity="center_horizontal"
+                android:text="my"
+                android:padding="15dp"
+                android:textSize="2dp"
+                android:textColor="@color/transparent"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/m4"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="mb"
+                android:textSize="2dp"
+                android:textColor="@color/transparent"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/m5"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:padding="15dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:text="mw"
+                android:textSize="2dp"
+                android:textColor="@color/transparent"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/m6"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:padding="15dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:text="mu"
+                android:textSize="2dp"
+                android:textColor="@color/transparent"/>
+            
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/m7"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:padding="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="ml"
+                android:textSize="2dp"
+                android:textColor="@color/transparent"/>
+
+            
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/m8"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+
+                android:layout_gravity="center_horizontal"
+                android:text="ms"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="W"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="22dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textColor="@color/white_color"/>
+
+        <LinearLayout
+            android:id="@+id/w_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/w1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="wr"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                app:font="Roboto-Bold_0.ttf" />
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/w2"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="wg"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/w3"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="wy"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/w4"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="wb"/>
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/w5"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="ww"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/w6"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="wu"/>
+
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/w7"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="wl"/>
+            
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/w8"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="ws"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="J"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="22dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textColor="@color/white_color"/>
+
+
+        <LinearLayout
+            android:id="@+id/j_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/j1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+
+                app:font="Roboto-Bold_0.ttf"
+
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="jr"/>
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/j2"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="jg"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/j3"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="jy"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/j4"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="jb"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/j5"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="jw"/>
+
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/j6"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="ju"/>
+            
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                android:id="@+id/j7"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="jl"/>
+            <com.putt2gether.view.LatoTextView
+                android:visibility="gone"
+                app:font="Roboto-Bold_0.ttf"
+                android:id="@+id/j8"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="2dp"
+                android:padding="15dp"
+                android:textColor="@color/transparent"
+                android:text="js"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

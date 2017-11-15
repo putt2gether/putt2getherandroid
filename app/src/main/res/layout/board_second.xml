@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/header_bg" >
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler_board_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <LinearLayout
+            android:background="#E7E5E2"
+            android:id="@+id/header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/rank_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="@color/viewline"
+
+
+                    android:text="RANK"/>
+
+                <com.putt2gether.view.LatoTextView
+                    android:textSize="13dp"
+                    android:layout_toRightOf="@id/rank_net"
+                    android:id="@+id/player_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="@color/viewline"
+                    android:text="PLAYERS"/>
+
+                <com.putt2gether.view.LatoTextView
+
+                   android:layout_alignParentRight="true"
+                    android:textSize="13dp"
+
+                    android:id="@+id/holesplayed_net"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                   android:gravity="center"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="@color/viewline"
+
+                    android:text="FEET &amp; INCHES"/>
+
+
+
+            </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

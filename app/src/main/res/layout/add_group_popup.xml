@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/action">
+
+    <com.putt2gether.view.LatoTextView
+
+        android:id="@+id/addgroup_popup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD TO GROUP"
+
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white_color"
+
+        app:font="Roboto-Bold_0.ttf" />
+
+    <ListView
+        android:id="@+id/list_addgroup"
+        android:layout_below="@+id/addgroup_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/action"
+        android:layout_above="@+id/done_addpopup"/>
+
+    <RelativeLayout
+        android:id="@+id/done_addpopup"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+
+        android:background="@color/white_color">
+
+        <com.putt2gether.view.LatoTextView
+
+            android:id="@+id/addgroup_done"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black_color"
+
+            app:font="Roboto-Bold_0.ttf" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

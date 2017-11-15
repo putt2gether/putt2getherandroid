@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent_Edetail"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_person_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/eventDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_person_event"
+            android:layout_marginLeft="5dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/invite_from_create"
+        android:layout_below="@+id/toolbar_create_event">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selecte_golf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOLF COURSE"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/select_golf_course"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/person_golf_course_name"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        app:font="Roboto-Regular_0.ttf"
+                        android:paddingTop="4dp"
+                        android:textSize="15dp"
+                        android:paddingBottom="4dp"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/action"
+                        android:layout_marginRight="2dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/create_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT NAME "
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/person_event_name"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        app:font="Roboto-Regular_0.ttf"
+                        android:paddingTop="4dp"
+                        android:textSize="15dp"
+                        android:paddingBottom="4dp"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/action"
+                        android:layout_marginRight="2dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO. OF PLAYERS "
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/b">
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/person_player_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:text=""
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/create_individual_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/team"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INDIVIDUAL/TEAM"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/person_team_type"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textColor="@color/action"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:layout_marginLeft="2dp"/>
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/create_select_formate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/formate"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FORMAT"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/person_formate"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/action"
+                        android:textSize="15dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:layout_marginLeft="2dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEE BOX"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/person_tee_m"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_layout"
+                        android:layout_marginRight="5dp">
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/mText_person"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="M"
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/person_tee_w"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/circle_layout">
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/wtext_person"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="W"
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/person_tee_j"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_layout">
+
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/jText_person"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="J"
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/create_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT TIME "
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/date_time_picker"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/date_time_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/action"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        android:background="#00000000"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:focusableInTouchMode="false"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/hole_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO. OF HOLES "
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/b">
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/person_holes_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:text=""
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/event_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT TYPE"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:id="@+id/person_event_type"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textColor="@color/action"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:layout_marginLeft="2dp"/>
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ed_multi_screen_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SINGLE SCREEN"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:id="@+id/ed_multi_screenTV"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textColor="@color/action"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:layout_marginLeft="2dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/select_hole_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOLES"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:layout_marginLeft="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/person_frntBck_hole"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FRONT9"
+                        android:textSize="15dp"
+                        android:textColor="@color/action"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:layout_marginLeft="2dp"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#949494"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/spot_prize_yes_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginBottom="7dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPOT PRIZE"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:layout_marginLeft="10dp"/>
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/select_hole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="SELECTED HOLE"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textSize="15dp"
+                        android:textColor="@color/black_color"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#949494"
+                        android:layout_below="@+id/select_hole"/>
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/closest_pinTXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLOSEST TO PIN"
+                        android:textSize="15dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="@color/black_color"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp" />
+                    <LinearLayout
+                        android:id="@+id/closest_pin_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn2"
+                            android:visibility="gone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/closest_pin_btn4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/closest_pin_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#949494"
+                        android:layout_below="@+id/closest_pin_btn"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/long_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LONG DRIVE"
+                        android:textSize="15dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="@color/black_color"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp" />
+
+                    <LinearLayout
+                        android:id="@+id/long_drive_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true">
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/long_drive_btn4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/long_drive_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#949494"
+                        android:layout_below="@+id/long_drive_btn"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/straight_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STRAIGHT DRIVE"
+                        android:textSize="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="@color/black_color"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp" />
+
+                    <LinearLayout
+                        android:id="@+id/straight_drive_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/straight_drive_btn4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/puttText"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/straight_drive_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="12dp"
+                                app:font="Roboto-Regular_0.ttf"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white_color"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/plus_icon_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="7dp"
+        android:layout_above="@+id/invite_from_create"
+        android:background="@mipmap/plus_icon" />
+
+
+    <LinearLayout
+        android:id="@+id/invite_from_create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+
+            android:id="@+id/person_SRTART_EVENT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/action"
+            android:layout_weight="1">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/event_detail_text"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                app:font="Roboto-Bold_0.ttf"
+                android:paddingTop="4dp"
+                android:layout_centerInParent="true"
+                android:paddingBottom="4dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="17dp"
+                android:textColor="#fff"
+                android:layout_marginRight="2dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/declineBTN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/action"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"/>
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/event_decline_text"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DECLINE"
+                android:textAllCaps="true"
+                app:font="Roboto-Bold_0.ttf"
+                android:paddingTop="4dp"
+                android:layout_centerInParent="true"
+                android:paddingBottom="4dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="17dp"
+                android:textColor="#fff"
+                android:layout_marginRight="2dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

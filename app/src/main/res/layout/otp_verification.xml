@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/parent_id">
+
+    <LinearLayout
+        android:id="@+id/login_logo_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/logo"
+            android:layout_marginTop="50dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/puttText"
+                android:layout_marginTop="5dp"
+                app:font="Roboto-Regular_0.ttf"
+                android:padding="2dp"
+                android:text="@string/otp_text"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_et_lay"
+        android:layout_below="@+id/login_logo_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/input_OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="OTP"
+            android:lines="1"
+            android:ems="10"
+            android:textColor="#000"
+            android:drawableStart="@mipmap/code_mobile_no"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@mipmap/email"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="15dp"/>
+
+
+
+        <Button
+            android:id="@+id/otp_verify_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="VERIFY"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_btn"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/login_et_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/back_lay_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_back_black"
+                android:layout_gravity="center_vertical"/>
+
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:layout_marginLeft="2dp"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                app:font="Roboto-Regular_0.ttf"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resend_lay_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resend_otp"
+                android:layout_gravity="center_vertical"/>
+
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESEND OTP"
+                android:layout_marginRight="5dp"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:layout_gravity="center_vertical"
+                app:font="Roboto-Regular_0.ttf"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

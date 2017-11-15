@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.putt2gether.putt.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/login_logo_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_et_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_logo_lay"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableLeft="@mipmap/display_name"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/display_name"
+                    android:hint="@string/display_name"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:textColor="#000" />
+
+
+                <EditText
+                    android:id="@+id/input_handicap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableLeft="@mipmap/handicap"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/handicap"
+                    android:hint="@string/handicap"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textColor="#000" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/input_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@mipmap/country"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/country"
+                        android:focusable="false"
+                        android:hint=""
+                        android:inputType="text"
+                        android:lines="1"
+                        android:textColor="#000" />
+
+                    <Spinner
+                        android:id="@+id/spinner_profile_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/input_mobile_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@mipmap/code_mobile_no"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/code_mobile_no"
+                        android:focusable="false"
+                        android:hint="+3333"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:textColor="#000" />
+
+                    <EditText
+                        android:id="@+id/input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="MOBILE NO."
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLength="10"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableLeft="@mipmap/email"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/email"
+                    android:hint="EMAIL"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000" />
+
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableLeft="@mipmap/password"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/password"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:textColor="#000" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/input_home_golf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableLeft="@mipmap/password"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/homecourse"
+                    android:hint="HOME COURSE"
+                    android:inputType="text"
+                    android:textColor="#000">
+
+                    <requestFocus />
+                </AutoCompleteTextView>
+
+                <LinearLayout
+                    android:id="@+id/privacy_policyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:text="By signing up You agree with PUTT2GETHER"
+                        android:textColor="#000"
+                        android:textSize="10dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:text="@string/privacy_policy"
+                        android:textColor="#000"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="10dp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_btn"
+                    android:text="@string/btn_sign_up"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/backToLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_et_lay"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="2dp" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BACK TO"
+                        android:textSize="17sp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="LOGIN"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/action"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="SIGN IN WITH FACEBOOK"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    app:font="Roboto-Bold_0.ttf" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

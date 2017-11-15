@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_preview_leader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/back_preview_leader"
+
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="18dp"
+                app:font="Roboto-Bold_0.ttf" />
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/golfCourseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:font="Roboto-Bold_0.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareLeaderBoard"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+
+            android:gravity="end">
+
+
+            <ImageView
+                android:id="@+id/leader_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_share_white_18dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_leaderboard"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/puttText"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorColor="@color/action"
+            app:tabIndicatorHeight="3dp"
+            app:tabMaxWidth="120dp"
+            app:tabMode="scrollable"
+            app:tabPaddingBottom="0dp"
+            app:tabPaddingEnd="0dp"
+
+            app:tabPaddingStart="0dp"
+            app:tabPaddingTop="0dp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_leaderboard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/puttText"
+
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:visibility="gone"
+            app:tabIndicatorColor="@color/action"
+            app:tabIndicatorHeight="3dp"
+            app:tabPaddingBottom="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingTop="0dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_leader"
+        android:layout_below="@+id/tab_layout">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sssstt"/>
+
+        <LinearLayout
+            android:id="@+id/sssstt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/stats_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@color/action"
+                android:gravity="center">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Click here for Stats"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/banner_leaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_leader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action"
+        android:gravity="center">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ADD SCORE"
+            android:textColor="#fff"
+            android:textSize="18dp"
+
+            app:font="Roboto-Bold_0.ttf" />
+
+    </LinearLayout>
+
+</RelativeLayout>

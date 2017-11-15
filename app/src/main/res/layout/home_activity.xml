@@ -1,0 +1,158 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@color/action"
+                local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_menu_black_24dp"/>
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/maintitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PUTT2GETHER"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="25dp"
+                    app:font="Roboto-Bold_0.ttf"
+                    android:textColor="#fff" />
+
+
+                </android.support.v7.widget.Toolbar>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container_body"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_layout_w"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="190dp"
+            android:background="@color/action"
+            android:id="@+id/navigationHeader"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:id="@+id/profile_drawer_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <com.putt2gether.view.CircleImageView
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:id="@+id/img_profile"
+                        android:src="@drawable/vishal"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical">
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUsername_profile"
+                        android:text=""
+                        android:textSize="17dp"
+                        android:textStyle="normal"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        app:font="Roboto-Regular_0.ttf"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_btn"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@mipmap/edit_profile"/>
+                        <com.putt2gether.view.LatoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtUserAge_profile"
+                            android:textSize="12dp"
+                            android:text="edit profile"
+                            android:layout_marginRight="6dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center_vertical"
+                            app:font="Roboto-Regular_0.ttf"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@color/white_color"
+            android:listSelector="@drawable/list_selector"
+            android:background="@color/action"/>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_id_groups">
+
+    <RelativeLayout
+        android:id="@+id/search_groups_lay"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+        <EditText
+            android:id="@+id/edit_search_groups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="SEARCH..."
+            android:textColor="#000"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:drawablePadding="5dp"/>
+
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/search_groups_lay"
+        android:layout_above="@+id/next_btn_groups"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/groups_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="none"
+
+        android:layout_marginTop="1dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/next_btn_groups"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            app:font="Roboto-Bold_0.ttf"
+            android:paddingTop="4dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7sp"
+            android:paddingRight="7sp"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

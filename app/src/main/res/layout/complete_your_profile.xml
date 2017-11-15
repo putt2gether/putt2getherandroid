@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fb_profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_tab_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7sp"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_toRightOf="@id/back_tab_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="COMPLETE YOUR PROFILE"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fb_profile_save"
+        android:layout_below="@+id/fb_profile_toolbar"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/action">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/puttText" />
+
+                <RelativeLayout
+                    android:id="@+id/fb_edit_profile_lay"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true">
+
+                    <com.putt2gether.view.CircleImageView
+                        android:id="@+id/fb_profile_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/vishal"
+                        app:civ_border_color="@color/white_color"
+                        app:civ_border_width="1dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/profile_edit"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/fb_name_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fb_edit_profile_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:text="Change profile photo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white_color"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo_layout"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="DISPLAY NAME"
+                        android:textColor="#9f9e9e"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <EditText
+                        android:id="@+id/fb_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="ENTER NAME"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="1dp"
+                        android:text="COUNTRY"
+                        android:textColor="#9f9e9e"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/fb_country_edit"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:ems="10"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:padding="2dp"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+                        <Spinner
+                            android:id="@+id/fb_spinner_profile_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="2dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="1dp"
+                        android:text="EMAIL ID"
+                        android:textColor="#9f9e9e"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <EditText
+                        android:id="@+id/fb_edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="ENTER YOUR EMAIL"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="1dp"
+                        android:text="MOBILE"
+                        android:textColor="#9f9e9e"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/fb_input_mobile_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:focusable="false"
+                            android:hint="CODE"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:paddingLeft="2dp"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/fb_input_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/transparent"
+                            android:ems="10"
+                            android:hint="MOBILE NO."
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="10"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="1dp"
+                        android:text="PASSWORD"
+                        android:textColor="#9f9e9e"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <EditText
+                        android:id="@+id/fb_edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="*******"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="1dp"
+                        android:text="HANDICAP"
+                        android:textColor="#9f9e9e"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <EditText
+                        android:id="@+id/fb_edit_handicap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="ENTER HANDICAP"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="HOME COURSE"
+                        android:textColor="#9f9e9e"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/fb_edit_homegolf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="HOME COURSE"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#FFD2D0D0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/fb_profile_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SAVE"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

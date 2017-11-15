@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_add_group"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_create_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE GROUP"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_create_group"
+            android:layout_marginLeft="5dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_add_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_above="@+id/addmembers_btn"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:background="#fff">
+
+
+            <RelativeLayout
+                android:id="@+id/upload_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true">
+            <com.putt2gether.view.CircleImageView
+                android:id="@+id/group_image_upload"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/vishal"
+                app:civ_border_width="1dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_centerHorizontal="true" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/tap_text"
+                    android:layout_below="@+id/group_image_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TAP TO UPLOAD IMAGE"
+                    android:textSize="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_centerVertical="true"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="@color/black_color"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:id="@+id/input_group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/black_color"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Enter the group name"
+                    android:paddingLeft="7dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_light"
+                    android:layout_below="@+id/input_group_name"/>
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+
+            <RelativeLayout
+                android:id="@+id/memebers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/action">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/members_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD MEMBERS"
+                    android:textSize="17dp"
+                    android:layout_centerVertical="true"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="@color/white_color"
+                    android:layout_margin="16dp"/>
+
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/add_members_list_group"
+                android:layout_below="@+id/memebers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/savegroup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action"
+        android:layout_alignParentBottom="true">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/create_new_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textColor="@color/white_color"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

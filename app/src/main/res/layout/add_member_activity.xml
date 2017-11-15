@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_id_addmember">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_tab_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_tab_addmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7sp"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/tab_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD MEMBERS"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_tab_addmember"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_tab_activity"
+        android:id="@+id/searc_addmember_lay"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+        <EditText
+            android:id="@+id/edit_search_addmemeber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:inputType="text"
+            android:lines="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="SEARCH..."
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:drawablePadding="5dp"/>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/invite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searc_addmember_lay"
+        android:orientation="vertical"
+        android:layout_above="@+id/addMember_btn"
+        android:background="#fff">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/members_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="1dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/addMember_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            app:font="Roboto-Bold_0.ttf"
+            android:paddingTop="4dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7sp"
+            android:paddingRight="7sp"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

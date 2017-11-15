@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white_color">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/rank_net_num"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:textColor="@color/black_color"
+
+            android:text="T1"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:textSize="16dp"
+            android:layout_toRightOf="@id/rank_net_num"
+            android:id="@+id/player_net_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:maxLength="13"
+            app:font="Roboto-Regular_0.ttf"
+            android:textColor="@color/black_color"
+            android:text="Bunny"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:textSize="16dp"
+            android:layout_toRightOf="@id/player_net_name"
+            android:id="@+id/player_net_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textColor="@color/viewline"
+            android:text="15"/>
+
+        <com.putt2gether.view.LatoTextView
+
+            android:textSize="16dp"
+            android:layout_toLeftOf="@+id/toggle_net_gross"
+            android:id="@+id/holesplayed_net_num"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="35dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:textColor="@color/black_color"
+            android:text="18"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:id="@+id/toggle_net_gross"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            app:font="Roboto-Regular_0.ttf"
+            android:textColor="@color/black_color"
+
+            android:text="EVEN"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selected_gray"/>
+
+</RelativeLayout>

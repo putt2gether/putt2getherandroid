@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/popBackground">
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Last chance to edit handicap or add participants to this event."
+        android:textSize="15dp"
+        android:gravity="center"
+        app:font="Roboto-Regular_0.ttf"
+        android:textColor="@color/white_color"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="15dp">
+        <RelativeLayout
+            android:id="@+id/edit_handicap_popup"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/rounded_btn_white"
+            android:layout_marginRight="1dp">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:gravity="center"
+                android:text="EDIT HANDICAP"
+                android:layout_centerInParent="true"
+               android:layout_margin="4dp"
+                android:textColor="@color/puttText"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/addparticipant_popup"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn_white"
+            android:layout_marginLeft="7dp">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:text="ADD PARTICIPANT"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="4dp"
+                android:textColor="@color/puttText"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/start_event_popup"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_btn_white"
+            android:layout_marginLeft="8dp">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Bold_0.ttf"
+                android:text="START EVENT"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="4dp"
+                android:textColor="@color/puttText"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

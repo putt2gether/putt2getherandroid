@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header_bg"
+            android:layout_margin="8dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_board_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E7E5E2">
+
+
+            <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/rank_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="RANK"
+                    android:textColor="@color/viewline"
+                    android:textSize="13dp"
+
+
+                    app:font="Roboto-Regular_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="22dp"
+                    android:layout_toRightOf="@id/rank_net"
+                    android:gravity="center"
+                    android:text="PLAYERS"
+                    android:textColor="@color/viewline"
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/holesplayed_net"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_toRightOf="@id/player_net"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="HOLES PLAYED"
+                    android:textColor="@color/viewline"
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/gross_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_toRightOf="@id/holesplayed_net"
+                    android:gravity="center_vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/toggle_net"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_circular_score"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:textAllCaps="true"
+                        android:singleLine="false"
+                        android:text="GROSS STROKEPLAY"
+                        android:textColor="@color/white_color"
+                        android:textSize="13dp"
+
+                        app:font="Roboto-Regular_0.ttf" />
+                </LinearLayout>
+
+            </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

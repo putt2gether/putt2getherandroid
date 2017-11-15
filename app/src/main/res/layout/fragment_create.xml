@@ -1,0 +1,2356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/parent_id_create"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_create_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="6dp"
+            android:paddingBottom="15dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_last10"
+                android:paddingLeft="6sp"
+                android:paddingRight="6sp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/create_player1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1dp"
+                    android:text="PLAYER 1"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/corner_layout_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="6sp">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="DISPLAY NAME"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#9f9e9e"
+                        android:layout_weight="2"/>
+
+                    <EditText
+                        android:id="@+id/name_playe1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_create"
+                        android:layout_marginLeft="15sp"
+                        android:ems="10"
+                        android:textSize="14dp"
+                        android:inputType="textCapCharacters"
+                        android:hint="ENTER NAME"
+                        android:textColor="#000"
+                        android:layout_weight="1"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aba9a9"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="6sp">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="HANDICAP"
+                        android:layout_weight="2"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#9f9e9e"/>
+
+                    <EditText
+                        android:id="@+id/handicap_player1"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_create"
+                        android:layout_marginLeft="15sp"
+                        android:ems="10"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:inputType="number"
+                        android:hint="ENTER HANDICAP"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aba9a9"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="6sp">
+
+                    <com.putt2gether.view.LatoTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="EMAIL"
+                        android:layout_weight="2"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#9f9e9e"/>
+
+                    <EditText
+                        android:id="@+id/email_player1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_create"
+                        android:layout_marginLeft="15sp"
+                        android:ems="10"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:inputType="textEmailAddress"
+                        android:hint="ENTER UNIQUE EMAIL ID"
+                        android:layout_weight="1"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/player2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="6dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 2"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:inputType="textCapCharacters"
+                            android:textColor="#000"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player2"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 3"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player3"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 4"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player4"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player5_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="6dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 5"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player5"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="6sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player6_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 6"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player6"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player7_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 7"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player7"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player8_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 8"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player8"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player9_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 9"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player9"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/player10_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 10"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player10"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player11_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 11"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player11"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player12_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 12"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player12"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player13_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 13"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player13"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player14_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 14"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player14"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/player15_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_last10"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/create_player15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="1dp"
+                        android:text="PLAYER 15"
+                        app:font="Roboto-Regular_0.ttf"
+                        android:textColor="#fff"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner_layout_border">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="DISPLAY NAME"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/name_playe15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textCapCharacters"
+                            android:hint="ENTER NAME"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="HANDICAP"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/handicap_player15"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:hint="ENTER HANDICAP"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#aba9a9"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10sp">
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:text="EMAIL"
+                            android:layout_weight="2"
+                            app:font="Roboto-Regular_0.ttf"
+                            android:textColor="#9f9e9e"/>
+
+                        <EditText
+                            android:id="@+id/email_player15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_create"
+                            android:layout_marginLeft="15sp"
+                            android:ems="10"
+                            android:textColor="#000"
+                            android:inputType="textEmailAddress"
+                            android:hint="ENTER UNIQUE EMAIL ID"
+                            android:layout_weight="1"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/create_playerADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="6dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_last10"
+                android:paddingLeft="6sp"
+                android:paddingRight="6sp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <com.putt2gether.view.LatoTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1dp"
+                    android:text="ADD PLAYER"
+                    app:font="Roboto-Regular_0.ttf"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/add_create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action">
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            app:font="Roboto-Bold_0.ttf"
+            android:paddingTop="4dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="6sp"
+            android:paddingRight="6sp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

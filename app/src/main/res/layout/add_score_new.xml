@@ -1,0 +1,3026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_addscore_new_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/back" />
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_score_new_eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/back_addscore_new_event"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/par_layout_white"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/toolbar_create_event">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hole_top_lay"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/rounded_btn"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_hole_uper">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/add_score_new_holeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/puttText"
+                android:textSize="35dp"
+                app:font="Roboto-Bold_0.ttf" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/add_score_new_par"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white_color"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/scor_lay"
+        android:layout_below="@+id/par_layout_white"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/player1_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/plyer1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <RelativeLayout
+                        android:id="@+id/player1Lay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/g1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/pl1"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player1Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:maxLength="15"
+
+                                    android:text="SG"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="17dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player1handi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/add_score_new_player1Name"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="(10)"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="12dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+                            </LinearLayout>
+
+                            <View
+
+                                android:id="@+id/player1_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/decline" />
+
+                        </RelativeLayout>
+
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:id="@+id/scoreTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/pl1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="SCORE"
+                            android:textColor="@color/black_color"
+                            android:textSize="17dp"
+                            android:visibility="gone"
+                            app:font="Roboto-Bold_0.ttf" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/g1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/border_circular_score"
+                        android:gravity="right">
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_minus1"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/minus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="43dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangle_gross_score"
+                            android:gravity="center">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/gross_score1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                app:font="Roboto-Bold_0.ttf" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_plus1"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/plus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/addNewscore_l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line_color" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:id="@+id/player1_expand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="NO OF PUTTS"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_circular_score"
+                                    android:gravity="right">
+
+                                    <RelativeLayout
+                                        android:id="@+id/putts_minus1"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="26dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/minus"
+
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold"
+
+
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="43dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangle_gross_score"
+                                        android:gravity="center">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:id="@+id/putts_number1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:hint="-"
+                                            android:text="-"
+                                            android:textColor="#000"
+                                            android:textSize="15dp"
+                                            app:font="Roboto-Bold_0.ttf" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/putts_add1"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/plus"
+
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/fairway_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="FAIRWAYS"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RadioGroup
+
+                                        android:id="@+id/radioGroup1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_left1"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="15dp"
+                                            android:background="@drawable/fairways_left"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+
+                                        <RadioButton
+                                            android:id="@+id/radio_center1"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+
+                                            android:layout_marginRight="15dp"
+                                            android:background="@drawable/fairwaymid"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+                                        <RadioButton
+                                            android:id="@+id/radio_right1"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/fairway_right"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+                                    </RadioGroup>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp"
+                                        android:weightSum="3">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="start"
+                                            android:text="LEFT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="HIT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="end"
+                                            android:text="RIGHT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/sand_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="SAND"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_circular_score"
+                                    android:gravity="right">
+
+                                    <RelativeLayout
+                                        android:id="@+id/sand_minus1"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="26dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/minus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="43dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangle_gross_score"
+                                        android:gravity="center">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:id="@+id/sand_number1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:hint="-"
+                                            android:text="0"
+                                            android:textColor="#000"
+                                            android:textSize="15dp"
+                                            app:font="Roboto-Bold_0.ttf" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/sand_add1"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/plus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/spot_prize_layout1_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="75dp"
+                            android:orientation="horizontal">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/spot_prizeTV_addscore1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="CLOSEST TO PIN"
+                                android:textColor="@color/black_color"
+                                android:textSize="15dp"
+                                app:font="Roboto-Regular_0.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/feetmain1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="28dp"
+                                    android:background="@drawable/rectangular_box"
+                                    android:ems="10"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center"
+                                    android:hint="-"
+                                    android:editable="false"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:textColor="#000"
+                                    android:textCursorDrawable="@drawable/editext_cursor"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/fee_text1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="FEET"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/player2_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player1_total_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/plyer2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <RelativeLayout
+                        android:id="@+id/player2Lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/g2"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/pl2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player2Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="BS"
+                                    android:maxLength="15"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="17dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player2handi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/add_score_new_player1Name"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="(10)"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="12dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+                            </LinearLayout>
+
+                            <View
+
+                                android:id="@+id/player2_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/puttText" />
+
+                        </RelativeLayout>
+
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:id="@+id/score2Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/pl2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="SCORE"
+                            android:textColor="@color/black_color"
+                            android:textSize="17dp"
+                            android:visibility="gone"
+                            app:font="Roboto-Bold_0.ttf" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/g2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/border_circular_score"
+                        android:gravity="right">
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_minus2"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/minus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="43dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangle_gross_score"
+                            android:gravity="center">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/gross_score2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                app:font="Roboto-Bold_0.ttf" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_plus2"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/plus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/addNewscore_l2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line_color" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/player2_expand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="NO OF PUTTS"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_circular_score"
+                                    android:gravity="right">
+
+                                    <RelativeLayout
+                                        android:id="@+id/putts_minus2"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="26dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/minus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="43dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangle_gross_score"
+                                        android:gravity="center">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:id="@+id/putts_number2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:hint="-"
+                                            android:text="-"
+                                            android:textColor="#000"
+                                            android:textSize="15dp"
+                                            app:font="Roboto-Bold_0.ttf" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/putts_add2"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/plus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/fairway_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="FAIRWAYS"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RadioGroup
+
+                                        android:id="@+id/radioGroup2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_left2"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="15dp"
+                                            android:background="@drawable/fairways_left"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+
+                                        <RadioButton
+                                            android:id="@+id/radio_center2"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginRight="15dp"
+                                            android:background="@drawable/fairwaymid"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+                                        <RadioButton
+                                            android:id="@+id/radio_right2"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/fairway_right"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+                                    </RadioGroup>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp"
+                                        android:weightSum="3">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="start"
+                                            android:text="LEFT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="HIT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="end"
+                                            android:text="RIGHT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/sand_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="SAND"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_circular_score"
+                                    android:gravity="right">
+
+                                    <RelativeLayout
+                                        android:id="@+id/sand_minus2"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="26dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/minus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="43dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangle_gross_score"
+                                        android:gravity="center">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:id="@+id/sand_number2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:hint="-"
+                                            android:text="0"
+                                            android:textColor="#000"
+                                            android:textSize="15dp"
+                                            app:font="Roboto-Bold_0.ttf" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/sand_add2"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/plus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/spot_prize_layout2_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="75dp"
+                            android:orientation="horizontal">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/spot_prizeTV_addscore2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="CLOSEST TO PIN"
+                                android:textColor="@color/black_color"
+                                android:textSize="15dp"
+                                app:font="Roboto-Regular_0.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/feetmain2"
+                                    android:layout_width="60dp"
+                                    android:layout_height="28dp"
+                                    android:background="@drawable/rectangular_box"
+                                    android:ems="10"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center"
+                                    android:hint="-"
+                                    android:editable="false"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:textColor="#000"
+                                    android:textCursorDrawable="@drawable/editext_cursor"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/fee_text2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="FEET"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/player3_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player2_total_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/plyer3_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <RelativeLayout
+                        android:id="@+id/player3Lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/g3"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/pl3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player3Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="VT"
+                                    android:maxLength="15"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="17dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player3handi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/add_score_new_player1Name"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="(10)"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="12dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+                            </LinearLayout>
+
+                            <View
+
+                                android:id="@+id/player3_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/decline" />
+
+                        </RelativeLayout>
+
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:id="@+id/score3Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/pl3"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="SCORE"
+                            android:textColor="@color/black_color"
+                            android:textSize="17dp"
+                            android:visibility="gone"
+                            app:font="Roboto-Bold_0.ttf" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/g3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/border_circular_score"
+                        android:gravity="right">
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_minus3"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/minus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="43dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangle_gross_score"
+                            android:gravity="center">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/gross_score3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                app:font="Roboto-Bold_0.ttf" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_plus3"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/plus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/addNewscore_l3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line_color" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/player3_expand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="NO OF PUTTS"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_circular_score"
+                                    android:gravity="right">
+
+                                    <RelativeLayout
+                                        android:id="@+id/putts_minus3"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="26dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/minus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="43dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangle_gross_score"
+                                        android:gravity="center">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:id="@+id/putts_number3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:hint="-"
+                                            android:text="-"
+                                            android:textColor="#000"
+                                            android:textSize="15dp"
+                                            app:font="Roboto-Bold_0.ttf" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/putts_add3"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/plus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fairway_layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="FAIRWAYS"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RadioGroup
+
+                                        android:id="@+id/radioGroup3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radio_left3"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="15dp"
+                                            android:background="@drawable/fairways_left"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+
+                                        <RadioButton
+                                            android:id="@+id/radio_center3"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginRight="15dp"
+                                            android:background="@drawable/fairwaymid"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+                                        <RadioButton
+                                            android:id="@+id/radio_right3"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/fairway_right"
+                                            android:button="@null"
+                                            android:checked="false" />
+
+                                    </RadioGroup>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp"
+                                        android:weightSum="3">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="start"
+                                            android:text="LEFT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="HIT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="end"
+                                            android:text="RIGHT"
+                                            android:textColor="#000"
+                                            android:textSize="12dp"
+                                            app:font="Roboto-Regular_0.ttf" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/sand_layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="75dp"
+                                android:orientation="horizontal">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:text="SAND"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="15dp"
+                                    app:font="Roboto-Regular_0.ttf" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_circular_score"
+                                    android:gravity="right">
+
+                                    <RelativeLayout
+                                        android:id="@+id/sand_minus3"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="26dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/minus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="43dp"
+                                        android:layout_height="28dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangle_gross_score"
+                                        android:gravity="center">
+
+                                        <com.putt2gether.view.LatoTextView
+                                            android:id="@+id/sand_number3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:hint="-"
+                                            android:text="0"
+                                            android:textColor="#000"
+                                            android:textSize="15dp"
+                                            app:font="Roboto-Bold_0.ttf" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/sand_add3"
+                                        android:layout_width="45dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@color/action"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@mipmap/plus"
+                                            android:gravity="center"
+                                            android:textColor="#fff"
+                                            android:textSize="22dp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/spot_prize_layout3_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="75dp"
+                            android:orientation="horizontal">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/spot_prizeTV_addscore3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="CLOSEST TO PIN"
+                                android:textColor="@color/black_color"
+                                android:textSize="15dp"
+                                app:font="Roboto-Regular_0.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/feetmain3"
+                                    android:layout_width="60dp"
+                                    android:layout_height="28dp"
+                                    android:background="@drawable/rectangular_box"
+                                    android:ems="10"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center"
+                                    android:hint="-"
+                                    android:editable="false"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:textColor="#000"
+                                    android:textCursorDrawable="@drawable/editext_cursor"
+                                    android:textSize="15dp" />
+
+
+                                <TextView
+                                    android:id="@+id/fee_text3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="FEET"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/player4_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player3_total_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/plyer4_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <RelativeLayout
+                        android:id="@+id/player4Lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/g4"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/pl4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player4Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:maxLength="15"
+                                    android:text="SC"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="17dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+
+                                <com.putt2gether.view.LatoTextView
+                                    android:id="@+id/add_score_new_player4handi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/add_score_new_player1Name"
+                                    android:layout_gravity="center_horizontal"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="(10)"
+                                    android:textColor="@color/black_color"
+                                    android:textSize="12dp"
+                                    app:font="Roboto-Bold_0.ttf" />
+                            </LinearLayout>
+
+                            <View
+
+                                android:id="@+id/player4_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/accepted" />
+
+                        </RelativeLayout>
+
+
+                        <com.putt2gether.view.LatoTextView
+
+                            android:id="@+id/score4Txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/pl4"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="SCORE"
+                            android:textColor="@color/black_color"
+                            android:textSize="17dp"
+                            android:visibility="gone"
+                            app:font="Roboto-Bold_0.ttf" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/g4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/border_circular_score"
+                        android:gravity="right">
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_minus4"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/minus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="43dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangle_gross_score"
+                            android:gravity="center">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:id="@+id/gross_score4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                app:font="Roboto-Bold_0.ttf" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/gross_score_plus4"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/action"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/plus"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/addNewscore_l4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/line_color" />
+
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/player4_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="75dp"
+                            android:orientation="horizontal">
+
+                            <com.putt2gether.view.LatoTextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="NO OF PUTTS"
+                                android:textColor="@color/black_color"
+                                android:textSize="15dp"
+                                app:font="Roboto-Regular_0.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_circular_score"
+                                android:gravity="right">
+
+                                <RelativeLayout
+                                    android:id="@+id/putts_minus4"
+                                    android:layout_width="45dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@color/action"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="26dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@mipmap/minus"
+                                        android:gravity="center"
+                                        android:textColor="#fff"
+                                        android:textSize="22dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="43dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/rectangle_gross_score"
+                                    android:gravity="center">
+
+                                    <com.putt2gether.view.LatoTextView
+                                        android:id="@+id/putts_number4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="-"
+                                        android:text="-"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        app:font="Roboto-Bold_0.ttf" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/putts_add4"
+                                    android:layout_width="45dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/action"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@mipmap/plus"
+                                        android:gravity="center"
+                                        android:textColor="#fff"
+                                        android:textSize="22dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fairway_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="75dp"
+                            android:orientation="horizontal">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="FAIRWAYS"
+                                android:textColor="@color/black_color"
+                                android:textSize="15dp"
+                                app:font="Roboto-Regular_0.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioGroup
+
+                                    android:id="@+id/radioGroup4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_left4"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="15dp"
+                                        android:background="@drawable/fairways_left"
+                                        android:button="@null"
+                                        android:checked="false" />
+
+
+                                    <RadioButton
+                                        android:id="@+id/radio_center4"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginRight="15dp"
+                                        android:background="@drawable/fairwaymid"
+                                        android:button="@null"
+                                        android:checked="false" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_right4"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginRight="8dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/fairway_right"
+                                        android:button="@null"
+                                        android:checked="false" />
+
+                                </RadioGroup>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    android:weightSum="3">
+
+                                    <com.putt2gether.view.LatoTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="start"
+                                        android:text="LEFT"
+                                        android:textColor="#000"
+                                        android:textSize="12dp"
+                                        app:font="Roboto-Regular_0.ttf" />
+
+                                    <com.putt2gether.view.LatoTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="HIT"
+                                        android:textColor="#000"
+                                        android:textSize="12dp"
+                                        app:font="Roboto-Regular_0.ttf" />
+
+                                    <com.putt2gether.view.LatoTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="end"
+                                        android:text="RIGHT"
+                                        android:textColor="#000"
+                                        android:textSize="12dp"
+                                        app:font="Roboto-Regular_0.ttf" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sand_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="75dp"
+                            android:orientation="horizontal">
+
+                            <com.putt2gether.view.LatoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="SAND"
+                                android:textColor="@color/black_color"
+                                android:textSize="15dp"
+                                app:font="Roboto-Regular_0.ttf" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border_circular_score"
+                                android:gravity="right">
+
+                                <RelativeLayout
+                                    android:id="@+id/sand_minus4"
+                                    android:layout_width="45dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@color/action"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="26dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@mipmap/minus"
+                                        android:gravity="center"
+                                        android:textColor="#fff"
+                                        android:textSize="22dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="43dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/rectangle_gross_score"
+                                    android:gravity="center">
+
+                                    <com.putt2gether.view.LatoTextView
+                                        android:id="@+id/sand_number4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="-"
+                                        android:text="0"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        app:font="Roboto-Bold_0.ttf" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/sand_add4"
+                                    android:layout_width="45dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/action"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@mipmap/plus"
+                                        android:gravity="center"
+                                        android:textColor="#fff"
+                                        android:textSize="22dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/spot_prize_layout4_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="75dp"
+                        android:orientation="horizontal">
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/spot_prizeTV_addscore4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:text="CLOSEST TO PIN"
+                            android:textColor="@color/black_color"
+                            android:textSize="15dp"
+                            app:font="Roboto-Regular_0.ttf" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/feetmain4"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/rectangular_box"
+                                android:ems="10"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint="-"
+                                android:editable="false"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textColor="#000"
+                                android:textCursorDrawable="@drawable/editext_cursor"
+                                android:textSize="15dp" />
+
+
+                            <TextView
+                                android:id="@+id/fee_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="FEET"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/scor_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottombar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_340_scorcard"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/table_all_new"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/player1_420Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#8e1212"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player1_420score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player1_420name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_color" />
+
+            <LinearLayout
+                android:id="@+id/player2_420Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0A5C87"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player2_420score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player2_420name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_color" />
+
+            <LinearLayout
+                android:id="@+id/player3_420Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#325604"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player3_420score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/player3_420name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/autopress_scorcard_tab"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/selected_gray"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textColor="@color/viewline"
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/front10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/front"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="&amp;"
+                    android:textColor="@color/black_color"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back2"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back3"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back6"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back7"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back8"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/back9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:font="Roboto-Bold_0.ttf" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/downrowscorecard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#e4e4e4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/teamA_expend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="TEAM A"
+                        android:maxLength="12"
+                        android:ellipsize="end"
+                        android:textAllCaps="true"
+                        android:textColor="@color/decline"
+                        android:textSize="14dp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/player1_teamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Vishal"
+                        android:maxLength="12"
+                        android:ellipsize="end"
+                        android:textColor="@color/black_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/player2_teamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="10dp"
+                        android:maxLength="12"
+                        android:ellipsize="end"
+                        android:text="Deepika"
+                        android:textColor="@color/black_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/team_idicator_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/decline"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/up_expend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1UP"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/thru_expend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="THRU"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white_color"
+                            android:textSize="12dp"
+                            app:font="Roboto-Regular_0.ttf" />
+
+                        <com.putt2gether.view.LatoTextView
+                            android:id="@+id/thru_expend_hole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:text=" 18"
+                            android:textColor="#fff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/teamB_expend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="TEAM A"
+                        android:maxLength="12"
+                        android:ellipsize="end"
+                        android:textAllCaps="true"
+                        android:textColor="@color/edit"
+                        android:textSize="14dp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/player1_teamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Vishal"
+                        android:maxLength="12"
+                        android:ellipsize="end"
+                        android:textColor="@color/black_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/player2_teamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Deepika"
+                        android:maxLength="12"
+                        android:ellipsize="end"
+                        android:textColor="@color/black_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/plus_icon_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottombar"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="7dp"
+        android:background="@mipmap/plus_icon" />
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/action"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/bottom_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/previoushole_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/back" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/first_seperator"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/bottom_back"
+                android:background="@color/puttText"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/aaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/scorecard_Btn"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/mid_icon_dialog"
+                    android:gravity="center">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/scoreText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SCORECARD"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff" />
+
+                <LinearLayout
+                    android:id="@+id/save_score"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/mid_icon_dialog"
+                    android:gravity="center">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/saveText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAVE"
+                        android:textColor="#fff"
+                        android:textSize="17dp"
+                        app:font="Roboto-Bold_0.ttf" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/second_seperator"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/bottom_next"
+                android:background="@color/puttText"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/bottom_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/next_hole_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/arrow_next" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/swap_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="#80000000">
+
+        <RelativeLayout
+            android:id="@+id/homeIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="7sp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/arrow" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                android:text="Tap here to enter Stats."
+                android:textColor="#fff"
+                android:textSize="18dp"
+                app:font="Roboto-Bold_0.ttf" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/action"
+    android:paddingBottom="5dp"
+    android:id="@+id/parentTee">
+
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/popup_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="YOU HAVE SUCCESSFULLY SAVED YOUR EVENT"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="13dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginRight="12dp"
+        app:font="Roboto-Bold_0.ttf"
+        android:textColor="@color/white_color"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp">
+
+        <RelativeLayout
+            android:id="@+id/yes_popup"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:layout_margin="7dp">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:textSize="13dp"
+                app:font="Roboto-Regular_0.ttf"
+                android:textColor="@color/action"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_popup"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:layout_margin="7dp">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:textSize="13dp"
+                android:textColor="@color/action"
+                android:layout_centerInParent="true"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

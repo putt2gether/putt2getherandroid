@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/create_my_group_btn">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/create_my_group_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action"
+        android:layout_alignParentBottom="true">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/create_new_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE NEW GROUP"
+            android:textSize="17dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textColor="@color/white_color"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

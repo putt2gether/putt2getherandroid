@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_bg"
+    android:layout_width="120dp"
+    android:layout_height="match_parent">
+
+    <!-- Tab title -->
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/tab_title_name"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_centerHorizontal="true"
+        app:font="Roboto-Regular_0.ttf"
+        android:textColor="@color/white" />
+
+    <!-- Tab divider -->
+    <View
+        android:id="@+id/tabdivider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

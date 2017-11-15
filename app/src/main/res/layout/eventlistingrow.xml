@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/detail_event_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/listing_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISHAL'S EVENT"
+            android:textSize="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            app:font="Roboto-Regular_0.ttf"
+            android:textColor="@color/black_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/invite_calendar"
+                android:layout_gravity="center_vertical"/>
+
+            <com.putt2gether.view.LatoTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/listing_date"
+                app:font="Roboto-Regular_0.ttf"
+                android:textSize="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/time_invite"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"/>
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/listing_time"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12dp"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:textSize="13dp"
+                android:text="ADMIN: "/>
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/listing_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:text="VISHAL TRIPATHI"
+                android:textSize="13dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black_color" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:textSize="13dp"
+                android:text="VENUE: "/>
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/listing_golf_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font="Roboto-Regular_0.ttf"
+                android:text="ROYAL NAIROBI GOLF CLUB"
+                android:textSize="13dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black_color" />
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

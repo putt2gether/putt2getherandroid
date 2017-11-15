@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentTee"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@color/action"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/popup_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="Due to slow internet connections, no data found "
+
+        android:textColor="@color/white_color"
+        android:textSize="13dp"
+        app:font="Roboto-Bold_0.ttf" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/refresh_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:padding="4dp"
+            android:background="@color/white_color">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:text="REFRESH"
+                android:textColor="@color/action"
+                android:textSize="15dp"
+                app:font="Roboto-Regular_0.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancel_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:padding="4dp"
+            android:background="@color/white_color">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:text="CANCEL"
+                android:textColor="@color/action"
+                android:textSize="15dp"
+                app:font="Roboto-Regular_0.ttf" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.putt2gether.view.LatoTextView
+                android:id="@+id/invite_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:text="VISHAL'S EVENT"
+                android:textColor="@color/black_color"
+                android:textSize="17dp"
+                app:font="Roboto-Regular_0.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/invite_calendar" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/invite_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:text="14:24"
+                    android:textSize="12dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/time" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/invite_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="22 APR"
+                    android:textSize="12dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADMIN: "
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/invite_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:ellipsize="end"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:text="VISHAL TRIPATHI"
+                    android:textColor="@color/black_color"
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <com.putt2gether.view.LatoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VENUE: "
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+                <com.putt2gether.view.LatoTextView
+                    android:id="@+id/invite_venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:ellipsize="end"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:text="ROYAL NAIROBI GOLF CLUB"
+                    android:textColor="@color/black_color"
+                    android:textSize="13dp"
+                    app:font="Roboto-Regular_0.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/invite_edit_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_btn_invite">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/invite_edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:text="EDIT"
+                        android:textColor="@color/white_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/invite_decline_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/decline_btn_invite">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/invite_decline_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:text="DECLINE"
+                        android:textColor="@color/white_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/invite_accept_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/accept_btn_invite">
+
+                    <com.putt2gether.view.LatoTextView
+                        android:id="@+id/invite_accept_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:text="ACCEPT"
+                        android:textColor="@color/white_color"
+                        android:textSize="12dp"
+                        app:font="Roboto-Regular_0.ttf" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/banner_invite_list_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:visibility="gone">
+
+            <ImageView
+
+                android:id="@+id/banner_invite_list_logo"
+                android:layout_width="70dp"
+                android:layout_centerInParent="true"
+                android:layout_height="70dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/aaaaaa"
+        android:layout_marginTop="10dp"
+        android:background="#e4e3e3" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/action">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/name_hole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIKAS RAWAT "
+            android:textSize="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginRight="3dp"
+            android:textColor="#fff"
+            app:font="Roboto-Regular_0.ttf"
+            />
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_toRightOf="@id/name_hole"
+            android:id="@+id/hole_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(12)"
+            android:textSize="12dp"
+            android:textColor="@color/white_color"
+            app:font="Roboto-Regular_0.ttf" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selected_gray"
+        />
+</LinearLayout>

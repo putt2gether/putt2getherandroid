@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_Select_scorer"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_select_scorer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7sp"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT SCORER"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_select_scorer"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scorer_list"
+        android:layout_below="@+id/toolbar_Select_scorer"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/scorer_continue_btn"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/scorer_continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/action"
+        android:layout_alignParentBottom="true">
+
+
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTINUE"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

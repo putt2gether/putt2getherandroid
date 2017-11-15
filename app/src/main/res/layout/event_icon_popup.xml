@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_dialog_bg">
+
+    <com.putt2gether.view.LatoTextView
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Event Type"
+        android:textSize="14dp"
+        app:font="Roboto-Regular_0.ttf"
+        android:textColor="@color/puttText"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/p1"
+        android:layout_below="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+    <com.putt2gether.view.LatoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font="Roboto-Bold_0.ttf"
+        android:text="Public event: "
+        android:textSize="12dp"
+        android:textColor="@color/black_color"/>
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font="Roboto-Regular_0.ttf"
+            android:text="A Public event is viewable to other users. Any user can also request to participate in a public event."
+            android:textSize="12dp"
+            android:textColor="@color/black_color"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/p2"
+        android:layout_below="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font="Roboto-Bold_0.ttf"
+            android:text="Private event: "
+            android:textSize="12dp"
+            android:textColor="@color/black_color"/>
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font="Roboto-Regular_0.ttf"
+            android:text="Private events are closed group events and are not visible to the other users."
+            android:textSize="12dp"
+            android:textColor="@color/black_color"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

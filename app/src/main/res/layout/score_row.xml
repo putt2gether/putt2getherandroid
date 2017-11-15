@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        android:id="@+id/suggestion_row_layout"
+        android:layout_below="@+id/teamB_player1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/teamB_player2_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.putt2gether.view.CircleImageView
+
+                android:id="@+id/scorer_row_image"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/vishal" />
+
+        </RelativeLayout>
+
+        <com.putt2gether.view.LatoTextView
+            android:id="@+id/scorer_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/teamB_player2_lay"
+            android:text="SCORER NAME"
+            android:textColor="#000"
+            android:textSize="12dp"
+            app:font="Roboto-Regular_0.ttf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/age_lay2"
+            android:layout_toRightOf="@+id/scorer_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+
+            <com.putt2gether.view.LatoTextView
+
+                android:id="@+id/handicap_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textColor="@color/puttText"
+                app:font="Roboto-Regular_0.ttf"
+                android:textSize="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/suggestion_row_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/suggestion_row_addBTN"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+
+
+       <RelativeLayout
+           android:id="@+id/openplayerlist"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:onClick="openlist"
+           android:background="@drawable/private_background">
+
+           <com.putt2gether.view.LatoTextView
+               android:id="@+id/scorer_nameview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:font="Roboto-Regular_0.ttf"
+               android:text=""
+               android:textSize="12dp"
+               android:paddingRight="7dp"
+               android:paddingLeft="7dp"
+               android:paddingTop="3dp"
+               android:paddingBottom="3dp"/>
+
+       </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

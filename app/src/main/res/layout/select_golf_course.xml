@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/action">
+
+        <ImageView
+            android:id="@+id/back_selectgolf_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="7sp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+
+        <com.putt2gether.view.LatoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT GOLF COURSE"
+            android:layout_toRightOf="@+id/back_selectgolf_course"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:font="Roboto-Bold_0.ttf"
+            android:textSize="17sp"/>
+
+        <RelativeLayout
+            android:id="@+id/addGolfCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circular_last10">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD COURSE"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                app:font="Roboto-Regular_0.ttf"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/mainsearch"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/puttText">
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:textColor="#000"
+                android:hint="SEARCH..."
+
+                android:drawablePadding="5dp"/>
+            <EditText
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_background"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#000"
+                android:clickable="false"
+                android:imeOptions="actionSearch"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:drawablePadding="5dp"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

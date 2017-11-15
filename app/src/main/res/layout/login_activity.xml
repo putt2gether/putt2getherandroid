@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".putt.LoginActivity"
+    android:id="@+id/parent_id">
+
+    <LinearLayout
+        android:id="@+id/login_logo_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/logo"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_et_lay"
+        android:layout_below="@+id/login_logo_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_corner">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_email"
+                android:textColor="#000"
+                android:drawableStart="@mipmap/email"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@mipmap/email"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"/>
+
+
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableStart="@mipmap/password"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/hint_password"
+                android:textColor="#000"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/password"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_sign_in"
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_btn"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/login_et_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/forgotPass_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/forgot_password"
+                android:layout_gravity="center_vertical"/>
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FORGOT"
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_marginLeft="2dp" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textSize="17sp"
+                android:textColor="#000"
+                app:font="Roboto-Bold_0.ttf"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60sp">
+
+        <LinearLayout
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/action"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW USER !"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_marginLeft="2dp"
+                android:textColor="#fff"
+                />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:layout_marginLeft="2dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                app:font="Roboto-Bold_0.ttf"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/facebook_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/action"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN WITH"
+                app:font="Roboto-Regular_0.ttf"
+                android:layout_marginLeft="2dp"
+                android:textColor="#fff" />
+
+            <com.putt2gether.view.LatoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FACEBOOK"
+                app:font="Roboto-Bold_0.ttf"
+                android:layout_marginLeft="2dp"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/next"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
